@@ -15,7 +15,7 @@
 
                             <div class="mb-4">
                                 <label for="title">Title</label>
-                                <input type="text" id="title" class="@error('title') border-red-500 @enderror" value="{{ old('title') }}">
+                                <input type="text" name="title" id="title" class="@error('title') border-red-500 @enderror" value="{{ old('title') }}">
 
                                 @error('title')
                                     <p class="mt-2 text-sm text-red-600">{{ $message }}</p>
